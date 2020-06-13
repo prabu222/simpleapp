@@ -1,8 +1,55 @@
 <template>
   <q-page class="flex flex-center">
     
-  hompage
-    
+  
+    <q-dialog v-model="alert">
+      <q-card>
+        <q-card-section>
+          <div class="text-h6">Calendar</div>
+        </q-card-section>
+
+        <q-card-section class="q-pt-none">
+         <q-date v-model="date" />
+        </q-card-section>
+
+        <q-card-actions align="right">
+          <q-btn flat label="OK" color="primary" v-close-popup />
+        </q-card-actions>
+      </q-card>
+    </q-dialog>
+
+ <q-dialog v-model="alarm">
+      <q-card>
+        <q-card-section>
+          <div class="text-h6">Alarm</div>
+        </q-card-section>
+
+        <q-card-section class="q-pt-none">
+         <q-time
+      v-model="time"
+      format24h
+    />
+        </q-card-section>
+
+        <q-card-actions align="right">
+          <q-btn flat label="OK" color="primary" v-close-popup />
+        </q-card-actions>
+      </q-card>
+    </q-dialog>
+
+<div class="row">
+    <div class="col-12 text-center">
+      <q-avatar size="150px" >
+      <img src="statics/prabu.png">
+    </q-avatar>
+      </div>
+       <div style="padding-top: 20px" class="col-12 text-center row">
+         <q-btn class="col-4 text-center" size="20px" color="amber" glossy label="Calendar" @click="alert= true"  />
+         <q-btn class="col-4 text-center" size="20px" color="primary" glossy label="about Prabu"  />
+         <q-btn class="col-4 text-center" size="20px" color="amber" glossy label="Set Alarm"  @click="alarm= true"/>
+         </div>
+      </div>
+ 
   </q-page>
 </template>
 
@@ -11,8 +58,19 @@ import login from '../components/form'
 
 
 export default {
+   data () {
+    return {
+        time: '19:42',
+        alarm: false,
+       alert: false,
+      date: '2019/02/01'
+    }
+  },
   name: 'PageIndex',
   components: {
       login }}
+
+
     
+
 </script>
