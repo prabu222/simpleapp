@@ -63,6 +63,7 @@
          <q-btn class="col-4 text-center" size="20px" color="amber" glossy label="Calendar" @click="alert= true"  />
          <q-btn class="col-4 text-center" size="20px" color="primary" glossy label="about Prabu"  @click="aboutprabu= true" />
          <q-btn class="col-4 text-center" size="20px" color="amber" glossy label="Set Alarm"  @click="alarm= true"/>
+         <q-btn class="col-4 text-center" size="20px" color="primary" glossy label="video" @click="videoclick"  />
          </div>
       </div>
  
@@ -79,6 +80,7 @@ export default {
         time: '19:42',
         alarm: false,
        alert: false,
+       video: false,
       date: '2019/02/01',
       aboutprabu: false,
       lorem: 'Hello im Prabu Im a archer, youtuber, and student. I like to play Fortnite and Minecraft, and I like to eat salmon sashimi. My hobby is to do archery.'
@@ -87,8 +89,16 @@ export default {
   },  
   name: 'PageIndex',
   components: {
-      login }}
+      login },
 
+       methods: {
+
+    videoclick () {
+            this.$router.push("/videos")
+        },
+      
+      }
+}
 
     
 

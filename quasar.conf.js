@@ -89,7 +89,9 @@ module.exports = function (/* ctx */) {
       //            (not treeshaking Quasar; biggest bundle size; convenient)
       all: 'auto',
 
-      components: ['QAvatar','QDate','QDialog','QTime'],
+      components: ['QAvatar','QDate','QDialog','QTime','QVideo','QCarousel',
+      'QCarouselControl',
+      'QCarouselSlide'],
       directives: ['ClosePopup'],
 
       // Quasar plugins

@@ -3,14 +3,17 @@
 
   <div class="row">
     <div class="col-12">
-      <h1 class="text-center">P</h1>
+    <q-video
+    s
+
+      src="https://www.youtube.com/embed/-osp9rFop6g"
+    />
+    
       </div>
        <div class="col-12 text-center">
-         <q-btn size="20px" color="amber" glossy label="start"  @click="linkclick"/>
+         <q-btn size="20px" color="amber" glossy label="Login"  @click="linkclick"/>
          </div>
       </div>
-    
- 
 
 
   </q-page>
