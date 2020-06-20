@@ -12,10 +12,10 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          EPIC APP
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>EPIC APP v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
@@ -61,46 +61,36 @@ export default {
       leftDrawerOpen: false,
       essentialLinks: [
         {
-          title: 'Docs',
-          caption: 'quasar.dev',
-          icon: 'school',
-          link: 'https://quasar.dev'
+          title: 'Youtube',
+          caption: 'my channel',
+          icon: 'movie_creation',
+          link: 'https://www.youtube.com/channel/UCGKx5-MAVUkUTxP-edRyKkw?view_as=subscriber'
         },
         {
-          title: 'Github',
-          caption: 'github.com/quasarframework',
-          icon: 'code',
-          link: 'https://github.com/quasarframework'
+          title: 'Instagram',
+          caption: 'my insta',
+          icon: 'photo_camera',
+          link: 'https://www.instagram.com/fortnite_probz/'
         },
         {
-          title: 'Discord Chat Channel',
-          caption: 'chat.quasar.dev',
-          icon: 'chat',
-          link: 'https://chat.quasar.dev'
-        },
-        {
-          title: 'Forum',
-          caption: 'forum.quasar.dev',
-          icon: 'record_voice_over',
-          link: 'https://forum.quasar.dev'
-        },
-        {
-          title: 'Twitter',
-          caption: '@quasarframework',
-          icon: 'rss_feed',
-          link: 'https://twitter.quasar.dev'
+          title: 'Youtube 2',
+          caption: 'my other channel',
+          icon: 'movie_creation',
+          link: 'https://www.youtube.com/channel/UCGZJiMgSsVdyZ2VH4mQvu5A'
         },
         {
           title: 'Facebook',
-          caption: '@QuasarFramework',
-          icon: 'public',
-          link: 'https://facebook.quasar.dev'
+          caption: 'my facebook',
+          icon: 'face',
+          link: 'https://www.facebook.com/lanang.soekon.3/'
         },
         {
-          title: 'Quasar Awesome',
-          caption: 'Community Quasar projects',
-          icon: 'favorite',
-          link: 'https://awesome.quasar.dev'
+          title: 'Twitter',
+          caption: 'my twitter',
+          icon: 'rss_feed',
+          link: 'https://twitter.com/Probz20'
+        
+      
         }
       ]
     }
