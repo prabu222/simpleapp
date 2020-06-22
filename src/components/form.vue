@@ -8,7 +8,7 @@
     >
       <q-input
         filled
-        v-model="name"
+        v-model="email"
         label="Email*"
         hint="alghaniprabu1@gmail.com"
         lazy-rules
@@ -18,7 +18,7 @@
       <q-input
         filled
         type="password"
-        v-model="age"
+        v-model="password"
         label="Password"
         lazy-rules
         
@@ -40,8 +40,8 @@
 export default {
   data () {
     return {
-      name: null,
-      age: null,
+      email: null,
+      password: null,
 
       accept: false
     }
@@ -50,7 +50,7 @@ export default {
   methods: {
 
     submitclick () {
-            this.$router.push("/homepage")
+            
         },
     onSubmit () {
       if (this.accept !== true) {
@@ -62,12 +62,24 @@ export default {
         })
       }
       else {
-        this.$q.notify({
+        if (this.email === 'alghaniprabu1@gmail.com' && this.password === 'prabu113' ){
+          this.$q.notify({
           color: 'green-4',
           textColor: 'white',
           icon: 'cloud_done',
           message: 'Submitted'
         })
+        this.$router.push("/homepage")
+        }
+        else {
+           this.$q.notify({
+          color: 'red-5',
+          textColor: 'white',
+          icon: 'warning',
+          message: 'Email or password is incorect'
+        })
+        }
+        
       }
     },
 

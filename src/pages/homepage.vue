@@ -55,9 +55,9 @@
 
 <div class="row">
     <div class="col-12 text-center">
-      <q-avatar size="150px" >
-      <img src="statics/prabu.png">
-    </q-avatar>
+      <div>
+          <q-img :src="img" class="logo"/>
+      </div>
       </div>
        <div style="padding-top: 20px" class="col-12 text-center row">
          <q-btn class="col-4 text-center" size="20px" color="amber" glossy label="Calendar" @click="alert= true"  />
@@ -77,6 +77,7 @@ import login from '../components/form'
 export default {
    data () {
     return {
+      img: "statics/icons/prabu2.jpeg",
         time: '19:42',
         alarm: false,
        alert: false,
@@ -93,6 +94,9 @@ export default {
 
        methods: {
 
+
+
+
     videoclick () {
             this.$router.push("/videos")
         },
@@ -108,4 +112,12 @@ export default {
 .my-card
   width: 100%
   max-width: 250px
+.logo
+  width: 50%
+  max-width: 300px
+  border-radius: 100%;
+
+
+
+
 </style>
